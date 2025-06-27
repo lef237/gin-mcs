@@ -1,0 +1,20 @@
+# A simple Todo application built with Go and Gin
+
+Model, View, Controller (MVC) architecture.
+
+Separate the router file and call it from `main.go`.
+
+## Usage
+
+```sh
+# POST /todos
+$ curl -X POST http://localhost:8080/todos \
+  -H "Content-Type: application/json" \
+  -d '{"title":"勉強する","completed":false}'
+
+# GET /todos
+$ curl http://localhost:8080/todos
+
+# DELETE /todos/:id
+$ curl -X DELETE http://localhost:8080/todos/1
+```
