@@ -17,4 +17,10 @@ $ curl http://localhost:8080/todos
 
 # DELETE /todos/:id
 $ curl -X DELETE http://localhost:8080/todos/1
+
+# PUT /todos/:id/toggle
+$ curl -X PUT http://localhost:8080/todos/1/toggle
+
+# GET /todos/completed
+$ curl http://localhost:8080/todos/completed
 ```

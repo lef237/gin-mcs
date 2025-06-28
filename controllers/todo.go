@@ -25,10 +25,31 @@ func CreateTodo(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
+	if ok, msg := newTodo.Validate(); !ok {
+		c.JSON(http.StatusBadRequest, gin.H{"error": msg})
+		return
+	}
 	newTodo.ID = idCounter
 	idCounter++
 	todos = append(todos, newTodo)
 	c.JSON(http.StatusCreated, newTodo)
+}
+
+func ToggleTodo(c *gin.Context) {
+	id, _ := strconv.Atoi(c.Param("id"))
+	for i := range todos {
+		if todos[i].ID == id {
+			todos[i].Toggle()
+			c.JSON(http.StatusOK, todos[i])
+			return
+		}
+	}
+	c.JSON(http.StatusNotFound, gin.H{"message": "Todo not found"})
+}
+
+func GetCompletedTodos(c *gin.Context) {
+	completed := models.FilterCompleted(todos)
+	c.JSON(http.StatusOK, completed)
 }
 
 func DeleteTodo(c *gin.Context) {
