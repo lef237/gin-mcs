@@ -12,6 +12,10 @@ var todos []models.Todo
 var idCounter = 1
 
 func GetTodos(c *gin.Context) {
+	if todos == nil {
+		c.JSON(http.StatusOK, []models.Todo{})
+		return
+	}
 	c.JSON(http.StatusOK, todos)
 }
 
