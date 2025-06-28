@@ -5,7 +5,7 @@ import (
 	"strconv"
 
 	"github.com/gin-gonic/gin"
-	"github.com/lef237/todo-app/models"
+	"github.com/lef237/gin-mvc/models"
 )
 
 var todos []models.Todo

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/lef237/todo-app/routes"
+	"github.com/lef237/gin-mvc/routes"
 )
 
 func main() {
