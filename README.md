@@ -24,3 +24,18 @@ $ curl -X PUT http://localhost:8080/todos/1/toggle
 # GET /todos/completed
 $ curl http://localhost:8080/todos/completed
 ```
+
+## Testing
+
+```sh
+# Run all tests
+$ go test ./...
+# Run tests for a specific package
+$ go test ./services
+# Run tests with coverage
+$ go test -cover ./...
+# Run tests with verbose output
+$ go test -v ./...
+# Run tests
+$ go test -run TestCreateAndGetTodos ./services
+```
