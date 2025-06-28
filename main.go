@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/lef237/gin-mvs/routes"
+	"github.com/lef237/gin-mcs/routes"
 )
 
 func main() {

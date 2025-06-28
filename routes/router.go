@@ -2,7 +2,7 @@ package routes
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/lef237/gin-mvs/controllers"
+	"github.com/lef237/gin-mcs/controllers"
 )
 
 func SetupRouter() *gin.Engine {

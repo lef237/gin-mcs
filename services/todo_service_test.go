@@ -3,7 +3,7 @@ package services
 import (
 	"testing"
 
-	"github.com/lef237/gin-mvs/models"
+	"github.com/lef237/gin-mcs/models"
 )
 
 func TestCreateAndGetTodos(t *testing.T) {

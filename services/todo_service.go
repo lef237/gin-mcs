@@ -1,7 +1,7 @@
 package services
 
 import (
-	"github.com/lef237/gin-mvs/models"
+	"github.com/lef237/gin-mcs/models"
 )
 
 var Todos []models.Todo = []models.Todo{}

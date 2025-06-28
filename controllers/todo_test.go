@@ -8,8 +8,8 @@ import (
 	"testing"
 
 	"github.com/gin-gonic/gin"
-	"github.com/lef237/gin-mvs/models"
-	"github.com/lef237/gin-mvs/services"
+	"github.com/lef237/gin-mcs/models"
+	"github.com/lef237/gin-mcs/services"
 )
 
 func setupRouter() *gin.Engine {

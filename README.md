@@ -1,8 +1,8 @@
-# gin-mvs
+# gin-mcs
 
 A simple Todo application built with Go and Gin
 
-Model, View, Service (MVS) architecture.
+Model, Controller, Service architecture.
 
 Separate the router file and call it from `main.go`.
 
