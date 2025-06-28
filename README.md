@@ -1,6 +1,6 @@
 # A simple Todo application built with Go and Gin
 
-Model, View, Controller (MVC) architecture.
+Model, View, Service (MVS) architecture.
 
 Separate the router file and call it from `main.go`.
 

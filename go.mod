@@ -1,4 +1,4 @@
-module github.com/lef237/gin-mvc
+module github.com/lef237/gin-mvs
 
 go 1.24.4
 
