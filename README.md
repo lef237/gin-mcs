@@ -1,10 +1,22 @@
-# A simple Todo application built with Go and Gin
+# gin-mvs
+
+A simple Todo application built with Go and Gin
 
 Model, View, Service (MVS) architecture.
 
 Separate the router file and call it from `main.go`.
 
 ## Usage
+
+```sh
+# Install dependencies
+$ go mod tidy
+# Run the application
+$ go run main.go
+# Open your browser and go to http://localhost:8080
+```
+
+## API Endpoints
 
 ```sh
 # POST /todos
